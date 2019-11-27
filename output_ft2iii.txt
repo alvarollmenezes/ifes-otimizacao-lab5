@@ -1,0 +1,144 @@
+>> [ft2iii_bfgs, ft2iii_dfp, ft2iii_steepdesc] = executar(@ft2iii, [3,-1]);
+Executando 'fminunc' com o método 'bfgs'
+                                                        First-order 
+ Iteration  Func-count       f(x)        Step-size       optimality
+     0           3              148                           372
+     1           9            78.05    0.000962681           18.4  
+     2          12          77.8964              1           7.35  
+     3          18            77.47             10           15.5  
+     4          21           76.309              1           33.9  
+     5          24          70.5552              1           88.7  
+     6          27          63.4356              1            115  
+     7          30          55.7509              1            102  
+     8          33          50.7759              1           56.4  
+     9          36          49.0826              1           13.3  
+    10          39          48.9848              1           0.95  
+    11          42          48.9843              1         0.0106  
+    12          45          48.9843              1         0.0007  
+    13          48          48.9843              1       0.000204  
+
+Local minimum found.
+
+Optimization completed because the size of the gradient is less than
+the default value of the optimality tolerance.
+
+<stopping criteria details>
+
+
+bfgs = 
+
+  struct with fields:
+
+           x: [11.4128 -0.8968]
+        fval: 48.9843
+    exitflag: 1
+      output: [1×1 struct]
+
+
+bfgs_output = 
+
+  struct with fields:
+
+       iterations: 13
+        funcCount: 48
+         stepsize: 1.3813e-04
+     lssteplength: 1
+    firstorderopt: 2.0361e-04
+        algorithm: 'quasi-newton'
+          message: 'Local minimum found.↵↵Optimization completed because the size of the gradient is less than↵the default value of the optimality tolerance.↵↵Stopping criteria details:↵↵Optimization completed: The first-order optimality measure, 5.458699e-07, is less ↵than options.OptimalityTolerance = 1.000000e-06.↵↵Optimization Metric                                          Options↵relative norm(gradient) =   5.46e-07             OptimalityTolerance =   1e-06 (default)'
+
+Executando 'fminunc' com o método 'dfp'
+                                                        First-order 
+ Iteration  Func-count       f(x)        Step-size       optimality
+     0           3              148                           372
+     1           9            78.05    0.000962681           18.4  
+     2          12          77.8964              1           7.35  
+     3          18            77.47             10           15.5  
+     4          21           76.309              1           33.9  
+     5          24          70.5552              1           88.7  
+     6          27          63.4356              1            115  
+     7          30          55.7509              1            102  
+     8          33          50.7759              1           56.4  
+     9          36          49.0826              1           13.3  
+    10          39          48.9848              1           0.95  
+    11          42          48.9843              1         0.0106  
+    12          45          48.9843              1         0.0007  
+    13          48          48.9843              1       0.000204  
+
+Local minimum found.
+
+Optimization completed because the size of the gradient is less than
+the default value of the optimality tolerance.
+
+<stopping criteria details>
+
+
+dfp = 
+
+  struct with fields:
+
+           x: [11.4128 -0.8968]
+        fval: 48.9843
+    exitflag: 1
+      output: [1×1 struct]
+
+
+dfp_output = 
+
+  struct with fields:
+
+       iterations: 13
+        funcCount: 48
+         stepsize: 1.3813e-04
+     lssteplength: 1
+    firstorderopt: 2.0361e-04
+        algorithm: 'quasi-newton'
+          message: 'Local minimum found.↵↵Optimization completed because the size of the gradient is less than↵the default value of the optimality tolerance.↵↵Stopping criteria details:↵↵Optimization completed: The first-order optimality measure, 5.458699e-07, is less ↵than options.OptimalityTolerance = 1.000000e-06.↵↵Optimization Metric                                          Options↵relative norm(gradient) =   5.46e-07             OptimalityTolerance =   1e-06 (default)'
+
+Executando 'fminunc' com o método 'steepdesc'
+                                                        First-order 
+ Iteration  Func-count       f(x)        Step-size       optimality
+     0           3              148                           372
+     1           9            78.05    0.000962681           18.4  
+     2          27          77.8933    0.000834955           7.27  
+     3          39          77.7364     0.00530335           18.2  
+     4          57          77.5813    0.000837006           7.22  
+     5          69          77.4261     0.00530881           18.1  
+     6          87          77.2727    0.000839052           7.18  
+     7          99          77.1192     0.00531432             18  
+     8         117          76.9675    0.000841093           7.14  
+     9         129          76.8156     0.00531985           17.9  
+    10         147          76.6655    0.000843129           7.09  
+    11         159          76.5153     0.00532542           17.8  
+    12         177          76.3668    0.000845161           7.05  
+    13         189          76.2182     0.00533104           17.6  
+
+Solver stopped prematurely.
+
+fminunc stopped because it exceeded the function evaluation limit,
+options.MaxFunctionEvaluations = 200 (the default value).
+
+
+steep = 
+
+  struct with fields:
+
+           x: [3.2866 -1.3455]
+        fval: 76.2182
+    exitflag: 0
+      output: [1×1 struct]
+
+
+steep_output = 
+
+  struct with fields:
+
+       iterations: 14
+        funcCount: 201
+         stepsize: 0.0397
+     lssteplength: 0.0053
+    firstorderopt: 17.6425
+        algorithm: 'quasi-newton'
+          message: 'Solver stopped prematurely.↵↵fminunc stopped because it exceeded the function evaluation limit,↵options.MaxFunctionEvaluations = 200 (the default value).'
+
+>> 

@@ -1,0 +1,124 @@
+>> [bfgs, dfp, steepdesc] = executar(@fexemplo, [1,1]);
+Executando 'fminunc' com o método 'bfgs'
+                                                        First-order 
+ Iteration  Func-count       f(x)        Step-size       optimality
+     0           3                6                             8
+     1           6             0.25          0.125              1  
+     2           9        0.0805763              1          0.389  
+     3          12        0.0510334              1          0.276  
+     4          15       0.00234029              1          0.158  
+     5          18      0.000114716              1         0.0366  
+     6          21       3.4414e-07              1        0.00116  
+     7          24      9.12731e-10              1       4.45e-05  
+     8          27      1.31734e-13              1       1.16e-06  
+
+Local minimum found.
+
+Optimization completed because the size of the gradient is less than
+the default value of the optimality tolerance.
+
+<stopping criteria details>
+
+Optimization completed: The first-order optimality measure, 1.292599e-07, is less 
+than options.OptimalityTolerance = 1.000000e-06.
+
+Optimization Metric                                          Options
+relative norm(gradient) =   1.29e-07             OptimalityTolerance =   1e-06 (default)
+
+ex_bfgs = 
+
+  struct with fields:
+
+           x: [2.5408e-07 -2.0293e-07]
+        fval: 1.3173e-13
+    exitflag: 1
+      output: [1×1 struct]
+
+>> ex_bfgs.output
+
+ans = 
+
+  struct with fields:
+
+       iterations: 8
+        funcCount: 27
+         stepsize: 3.9161e-05
+     lssteplength: 1
+    firstorderopt: 1.1633e-06
+        algorithm: 'quasi-newton'
+          message: 'Local minimum found.↵↵Optimization completed because the size of the gradient is less than↵the default value of the optimality tolerance.↵↵Stopping criteria details:↵↵Optimization completed: The first-order optimality measure, 1.292599e-07, is less ↵than options.OptimalityTolerance = 1.000000e-06.↵↵Optimization Metric                                          Options↵relative norm(gradient) =   1.29e-07             OptimalityTolerance =   1e-06 (default)'
+
+
+
+
+
+Executando 'fminunc' com o método 'dfp'
+                                                        First-order 
+ Iteration  Func-count       f(x)        Step-size       optimality
+     0           3                6                             8
+     1           6             0.25          0.125              1  
+     2           9        0.0805763              1          0.389  
+     3          12        0.0510334              1          0.276  
+     4          15       0.00234029              1          0.158  
+     5          18      0.000114716              1         0.0366  
+     6          21       3.4414e-07              1        0.00116  
+     7          24      9.12731e-10              1       4.45e-05  
+     8          27      1.31734e-13              1       1.16e-06  
+
+Local minimum found.
+
+Optimization completed because the size of the gradient is less than
+the default value of the optimality tolerance.
+
+<stopping criteria details>
+
+Optimization completed: The first-order optimality measure, 1.292599e-07, is less 
+than options.OptimalityTolerance = 1.000000e-06.
+
+Optimization Metric                                          Options
+relative norm(gradient) =   1.29e-07             OptimalityTolerance =   1e-06 (default)
+
+Executando 'fminunc' com o método 'steepdesc'
+                                                        First-order 
+ Iteration  Func-count       f(x)        Step-size       optimality
+     0           3                6                             8
+     1           6             0.25          0.125              1  
+     2          12        0.0833333       0.166667          0.333  
+     3          18        0.0277778            0.5          0.333  
+     4          24       0.00925927       0.166667          0.111  
+     5          30       0.00308643       0.499999          0.111  
+     6          36       0.00102881       0.166667          0.037  
+     7          42      0.000342938       0.499999          0.037  
+     8          48      0.000114313       0.166667         0.0123  
+     9          54      3.81046e-05       0.499996         0.0123  
+    10          60      1.27016e-05       0.166668        0.00412  
+    11          66        4.234e-06       0.499987        0.00412  
+    12          72      1.41135e-06       0.166669        0.00137  
+    13          78      4.70494e-07       0.499961        0.00137  
+    14          84      1.56839e-07       0.166674       0.000457  
+    15          90      5.22938e-08       0.499882       0.000457  
+    16          96      1.74337e-08       0.166689       0.000153  
+    17         102      5.81597e-09       0.499646       0.000153  
+    18         108      1.93948e-09       0.166735       5.09e-05  
+    19         114      6.48069e-10        0.49894       5.09e-05  
+                                                        First-order 
+ Iteration  Func-count       f(x)        Step-size       optimality
+    20         120      2.16296e-10        0.16687       1.71e-05  
+    21         126      7.26239e-11       0.496837       1.71e-05  
+    22         132      2.42985e-11       0.167278       5.77e-06  
+
+Local minimum found.
+
+Optimization completed because the size of the gradient is less than
+the default value of the optimality tolerance.
+
+<stopping criteria details>
+
+Optimization completed: The first-order optimality measure, 6.410151e-07, is less 
+than options.OptimalityTolerance = 1.000000e-06.
+
+Optimization Metric                                          Options
+relative norm(gradient) =   6.41e-07             OptimalityTolerance =   1e-06 (default)
+>> 
+
+

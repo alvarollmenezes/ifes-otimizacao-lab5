@@ -1,0 +1,161 @@
+>> [ft1b_bfgs, ft1b_dfp, ft1b_steepdesc] = executar(@ft1b, [-1,0]);
+Executando 'fminunc' com o método 'bfgs'
+                                                        First-order 
+ Iteration  Func-count       f(x)        Step-size       optimality
+     0           3              2.5                             4
+     1           6          0.53125           0.25              1  
+     2           9         0.205528              1          0.648  
+     3          15         0.111588       0.430076          0.282  
+     4          18        0.0918444              1          0.249  
+     5          21       0.00954911              1         0.0541  
+     6          24       0.00129009              1         0.0424  
+     7          27      0.000350366              1         0.0586  
+     8          30      8.06798e-06              1        0.00702  
+     9          33      1.26143e-08              1       0.000183  
+    10          36      5.60935e-13              1       2.21e-06  
+
+Local minimum found.
+
+Optimization completed because the size of the gradient is less than
+the default value of the optimality tolerance.
+
+<stopping criteria details>
+
+
+bfgs = 
+
+  struct with fields:
+
+           x: [1.0000 1.0000]
+        fval: 5.6093e-13
+    exitflag: 1
+      output: [1×1 struct]
+
+
+bfgs_output = 
+
+  struct with fields:
+
+       iterations: 10
+        funcCount: 36
+         stepsize: 3.4353e-04
+     lssteplength: 1
+    firstorderopt: 2.2103e-06
+        algorithm: 'quasi-newton'
+          message: 'Local minimum found.↵↵Optimization completed because the size of the gradient is less than↵the default value of the optimality tolerance.↵↵Stopping criteria details:↵↵Optimization completed: The first-order optimality measure, 4.420593e-07, is less ↵than options.OptimalityTolerance = 1.000000e-06.↵↵Optimization Metric                                          Options↵relative norm(gradient) =   4.42e-07             OptimalityTolerance =   1e-06 (default)'
+
+Executando 'fminunc' com o método 'dfp'
+                                                        First-order 
+ Iteration  Func-count       f(x)        Step-size       optimality
+     0           3              2.5                             4
+     1           6          0.53125           0.25              1  
+     2           9         0.205528              1          0.648  
+     3          15         0.111588       0.430076          0.282  
+     4          18        0.0918444              1          0.249  
+     5          21       0.00954911              1         0.0541  
+     6          24       0.00129009              1         0.0424  
+     7          27      0.000350366              1         0.0586  
+     8          30      8.06798e-06              1        0.00702  
+     9          33      1.26143e-08              1       0.000183  
+    10          36      5.60935e-13              1       2.21e-06  
+
+Local minimum found.
+
+Optimization completed because the size of the gradient is less than
+the default value of the optimality tolerance.
+
+<stopping criteria details>
+
+
+dfp = 
+
+  struct with fields:
+
+           x: [1.0000 1.0000]
+        fval: 5.6093e-13
+    exitflag: 1
+      output: [1×1 struct]
+
+
+dfp_output = 
+
+  struct with fields:
+
+       iterations: 10
+        funcCount: 36
+         stepsize: 3.4353e-04
+     lssteplength: 1
+    firstorderopt: 2.2103e-06
+        algorithm: 'quasi-newton'
+          message: 'Local minimum found.↵↵Optimization completed because the size of the gradient is less than↵the default value of the optimality tolerance.↵↵Stopping criteria details:↵↵Optimization completed: The first-order optimality measure, 4.420593e-07, is less ↵than options.OptimalityTolerance = 1.000000e-06.↵↵Optimization Metric                                          Options↵relative norm(gradient) =   4.42e-07             OptimalityTolerance =   1e-06 (default)'
+
+Executando 'fminunc' com o método 'steepdesc'
+                                                        First-order 
+ Iteration  Func-count       f(x)        Step-size       optimality
+     0           3              2.5                             4
+     1           6          0.53125           0.25              1  
+     2          12         0.114011       0.593811          0.251  
+     3          15        0.0542461              1           0.14  
+     4          18        0.0310201              1          0.153  
+     5          24        0.0251242       0.457189          0.145  
+     6          30        0.0204597       0.389164           0.12  
+     7          36        0.0169137       0.443633          0.117  
+     8          42        0.0140344       0.371364         0.0973  
+     9          48        0.0117675       0.433582         0.0966  
+    10          54       0.00989326       0.357906         0.0802  
+    11          60       0.00838137       0.425864         0.0807  
+    12          66       0.00711492       0.347406         0.0669  
+    13          72       0.00607504       0.419782         0.0681  
+    14          78        0.0051953        0.33902         0.0565  
+    15          84       0.00446319       0.414894          0.058  
+    16          90       0.00383904       0.332202         0.0481  
+    17          96       0.00331418       0.410902         0.0497  
+    18         102       0.00286396        0.32658         0.0411  
+    19         108       0.00248222       0.407602         0.0428  
+                                                        First-order 
+ Iteration  Func-count       f(x)        Step-size       optimality
+    20         114       0.00215313       0.321893         0.0354  
+    21         120       0.00187222       0.404846         0.0371  
+    22         126       0.00162908       0.317948         0.0306  
+    23         132       0.00142038       0.402524         0.0322  
+    24         138       0.00123913       0.314604         0.0265  
+    25         144       0.00108285       0.400555          0.028  
+    26         150      0.000946733       0.311752         0.0231  
+    27         156       0.00082892       0.398874         0.0245  
+    28         162      0.000726067       0.309305         0.0201  
+    29         168      0.000636757       0.397432         0.0214  
+    30         174      0.000558628       0.307198         0.0176  
+    31         180        0.0004906       0.396189         0.0187  
+    32         186      0.000430987       0.305377         0.0154  
+    33         192      0.000378959       0.395115         0.0164  
+    34         198      0.000333299       0.303797         0.0135  
+
+Solver stopped prematurely.
+
+fminunc stopped because it exceeded the function evaluation limit,
+options.MaxFunctionEvaluations = 200 (the default value).
+
+
+steep = 
+
+  struct with fields:
+
+           x: [0.9780 0.9430]
+        fval: 3.3330e-04
+    exitflag: 0
+      output: [1×1 struct]
+
+
+steep_output = 
+
+  struct with fields:
+
+       iterations: 35
+        funcCount: 201
+         stepsize: 0.0053
+     lssteplength: 0.3038
+    firstorderopt: 0.0135
+        algorithm: 'quasi-newton'
+          message: 'Solver stopped prematurely.↵↵fminunc stopped because it exceeded the function evaluation limit,↵options.MaxFunctionEvaluations = 200 (the default value).'
+
+>> 

@@ -1,0 +1,113 @@
+>> [ft2i_bfgs, ft2i_dfp, ft2i_steepdesc] = executar(@ft2i, [-2,1]);
+Executando 'fminunc' com o método 'bfgs'
+                                                        First-order 
+ Iteration  Func-count       f(x)        Step-size       optimality
+     0           3                4                             4
+     1           6             0.25           0.25              2  
+     2           9               -1              1       5.96e-08  
+
+Local minimum found.
+
+Optimization completed because the size of the gradient is less than
+the default value of the optimality tolerance.
+
+<stopping criteria details>
+
+
+bfgs = 
+
+  struct with fields:
+
+           x: [-1.1102e-16 -2.2352e-08]
+        fval: -1.0000
+    exitflag: 1
+      output: [1×1 struct]
+
+
+bfgs_output = 
+
+  struct with fields:
+
+       iterations: 2
+        funcCount: 9
+         stepsize: 1.1180
+     lssteplength: 1
+    firstorderopt: 5.9605e-08
+        algorithm: 'quasi-newton'
+          message: 'Local minimum found.↵↵Optimization completed because the size of the gradient is less than↵the default value of the optimality tolerance.↵↵Stopping criteria details:↵↵Optimization completed: The first-order optimality measure, 1.192093e-08, is less ↵than options.OptimalityTolerance = 1.000000e-06.↵↵Optimization Metric                                          Options↵relative norm(gradient) =   1.19e-08             OptimalityTolerance =   1e-06 (default)'
+
+Executando 'fminunc' com o método 'dfp'
+                                                        First-order 
+ Iteration  Func-count       f(x)        Step-size       optimality
+     0           3                4                             4
+     1           6             0.25           0.25              2  
+     2           9               -1              1       5.96e-08  
+
+Local minimum found.
+
+Optimization completed because the size of the gradient is less than
+the default value of the optimality tolerance.
+
+<stopping criteria details>
+
+
+dfp = 
+
+  struct with fields:
+
+           x: [-1.1102e-16 -2.2352e-08]
+        fval: -1.0000
+    exitflag: 1
+      output: [1×1 struct]
+
+
+dfp_output = 
+
+  struct with fields:
+
+       iterations: 2
+        funcCount: 9
+         stepsize: 1.1180
+     lssteplength: 1
+    firstorderopt: 5.9605e-08
+        algorithm: 'quasi-newton'
+          message: 'Local minimum found.↵↵Optimization completed because the size of the gradient is less than↵the default value of the optimality tolerance.↵↵Stopping criteria details:↵↵Optimization completed: The first-order optimality measure, 1.192093e-08, is less ↵than options.OptimalityTolerance = 1.000000e-06.↵↵Optimization Metric                                          Options↵relative norm(gradient) =   1.19e-08             OptimalityTolerance =   1e-06 (default)'
+
+Executando 'fminunc' com o método 'steepdesc'
+                                                        First-order 
+ Iteration  Func-count       f(x)        Step-size       optimality
+     0           3                4                             4
+     1           6             0.25           0.25              2  
+     2          12               -1            0.5       3.73e-08  
+
+Local minimum found.
+
+Optimization completed because the size of the gradient is less than
+the default value of the optimality tolerance.
+
+<stopping criteria details>
+
+
+steep = 
+
+  struct with fields:
+
+           x: [7.4506e-09 -1.1176e-08]
+        fval: -1.0000
+    exitflag: 1
+      output: [1×1 struct]
+
+
+steep_output = 
+
+  struct with fields:
+
+       iterations: 2
+        funcCount: 12
+         stepsize: 1.1180
+     lssteplength: 0.5000
+    firstorderopt: 3.7253e-08
+        algorithm: 'quasi-newton'
+          message: 'Local minimum found.↵↵Optimization completed because the size of the gradient is less than↵the default value of the optimality tolerance.↵↵Stopping criteria details:↵↵Optimization completed: The first-order optimality measure, 7.450581e-09, is less ↵than options.OptimalityTolerance = 1.000000e-06.↵↵Optimization Metric                                          Options↵relative norm(gradient) =   7.45e-09             OptimalityTolerance =   1e-06 (default)'
+
+>> 
